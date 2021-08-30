@@ -13,7 +13,7 @@ from werkzeug.utils import secure_filename
 import urllib.request
 import datetime
 import pickle
-import cv2
+import pandas as pd
 import numpy as np
 import re
 
@@ -25,6 +25,8 @@ array_reloaded = np.load('../model/alloffeatnumpy.npy')
     
 with open("static/image_paths.txt", "rb") as fp: # Unpickling
     image_paths = pickle.load(fp)
+
+url_df = pd.read_csv('../data/wayfair_urls.csv')
 
 
 UPLOAD_FOLDER = './static/uploads'
@@ -49,11 +51,23 @@ def image():
 
         query_path = test_path_and_file
         search_results, skus = search(query_path, 20)
-        print(search_results)       
+        print(search_results)
+        print(skus)
+
+        urls = []
+        for i in skus:
+
+            try:
+                urls.append(url_df[url_df.name == i]['link'].values[0])
+            except:
+                urls.append(-1)
+        print(urls)
+
         return render_template('results.html',
             original_image = test_path_and_file,
             search_results = search_results,
-            skus = skus)
+            skus = skus,
+            urls= urls)
     else:
         return 'Not POST ... unsuccessful'
 

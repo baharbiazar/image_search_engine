@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Results</title>
+		<link rel = 'stylesheet' href = '../static/master.css'>
 		
 	
 	</head>
@@ -22,7 +23,7 @@
 		<br>
 		{{'SKU:'}} {{ skus[i]}}
 		<br>
-		<a href= "https://www.wayfair.com/">click here</a>
+		<a href = {{ urls[i]}}>Click Here</a>
 		<br><br><br>
 		{% endfor %}
 			
