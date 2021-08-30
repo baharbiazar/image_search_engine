@@ -3,21 +3,46 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Results</title>
-		<link rel = 'stylesheet' href = '../static/master.css'>
+		<title>PickAchair</title>
 		
-	
-	</head>
-	<body >
+		<style>
 
-		here are the results
-		
-		<h3>Uploaded image:</h3>
-		<img  src= {{ original_image }} >
+            @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cabin&family=Open+Sans&family=PT+Sans&family=Pacifico&display=swap');
+
+			   h2{
+				
+				font-family: 'PT Sans', sans-serif;
+				text-align: center;
+			    }
+				p{  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			    	text-align: center;
+					width: 500px ;
+					margin-left: 600px}
+
+				div.main{text-align: center;
+						background-color: rgb(255, 255, 255, 0.9);
+					}
+
+				
+				.center {
+							display: block;
+							margin-left: auto;
+							margin-right: auto;
+							width: 35%;
+							}
+
+		</style>
+	</head>
+	
+	<body >
+		<p>
+		<h2>Uploaded image:</h2>
+		<div class = 'center'>
+		<img  src= {{ original_image }} height="200px"></div>
 		
 		<hr>
-		<h3>Similar images to explore:</h3>
-		
+		<h2>Similar images to explore:</h2>
+		<div class = 'center'>
 		{% for i in range(10) %}
 		<img  src= {{ search_results[i] }} >
 		<br>
@@ -26,6 +51,6 @@
 		<a href = {{ urls[i]}}>Click Here</a>
 		<br><br><br>
 		{% endfor %}
-			
+	    </div></p>
 	</body>
 </html>

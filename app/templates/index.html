@@ -4,41 +4,113 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>PickAchair</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel = 'stylesheet' href = '../static/master.css'>
-	
+		
+		<style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cabin&family=Open+Sans&family=PT+Sans&family=Pacifico&display=swap');
+
+			   h2{
+				
+				font-family: 'PT Sans', sans-serif;
+				text-align: center;
+			    }
+				p{  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			    	text-align: center;
+					width: 500px ;
+					margin-left: 600px}
+
+				div.main{text-align: center;
+						background-color: rgb(255, 255, 255, 0.9);
+					}
+
+				
+				.center {
+							display: block;
+							margin-left: auto;
+							margin-right: auto;
+							width: 35%;
+							}
+
+				.hero {
+						background-image: url('http://placekitten.com/1200/800');
+						opacity: 0.75;}
+				.wayfair{
+					display: block;
+					margin-left: 45%;
+							margin-right: auto;
+							width: 10%;
+						align-items: center;}
+
+						.center-cropped {
+											object-fit: none; /* Do not scale the image */
+											object-position: center; /* Center the image within the element */
+											height: 580px;
+											width: 600px;
+
+											}
+
+					body{background-image: url() ;
+						}
+
+						input[type=file]::file-selector-button {
+							border: 2px solid #b8a303;
+							padding: 8px 10px;
+							border-radius: .2em;
+							background-color: #faf296;
+							transition: 1s;
+							font-size: 16px;
+							margin: 4px 2px;
+							border-radius: 8px;
+							}
+
+							input[type=file]::file-selector-button:hover {
+							background-color: #81ecec;
+							border: 2px solid #00cec9;
+							border-radius: 8px;
+							}
+
+							.button {
+										background-color: #faf296;
+										border: 2px solid #b8a303;
+										color: rgb(0, 0, 0);
+										padding: 8px 10px;
+										text-align: center;
+										text-decoration: none;
+										display: inline-block;
+										font-size: 16px;
+										margin: 4px 2px;
+										cursor: pointer;
+										border-radius: 8px;
+										}
+					
+		</style>	
 	</head>
 	<body >
-
-
-		<h3>Upload an image of your furniture</h3>
-				
-		<form action="/image" method='POST' enctype=multipart/form-data >
-			<input type="file" name="file"/>
-		<input type="submit" value="Upload file"/><br>
-			</form>
-
-		<hr>
-	
-	
-		<h3>Upload an image of your desired chair</h3>
-		<p>
 		
-		<form action="" method='POST' enctype = multipart/form-data >
-		<p><input type="file"  accept="image/*" name="user_image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-		<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
-		<p><img id="output" width="200" /></p>
+		<p>
+		<img style='vertical-align:middle;' src = '../static/logo.png' height="120px">
+		PickAchair helps you find Wayfair furniture.
+		<div style='vertical-align:middle; display:inline;'></div>
 
-		<script>
-		var loadFile = function(event) {
-			var image = document.getElementById('output');
-			image.src = URL.createObjectURL(event.target.files[0]);
-		};
-		</script>
-	</form>
-</p>
-				
+		<div class= 'center'>
+		<img SRC="https://i.pinimg.com/564x/bd/ef/f9/bdeff91d41200361dc985f5804a55c9f.jpg" class="center-cropped"></div></p>
+
+		<div class= 'main'>
+		
+		<p><h2>Upload an image of your furniture</h2></p>
+		
+		
+		
+		<form action="/image" method='POST' enctype=multipart/form-data >
+			<input type="file" name="file" id="fileUpload"/>
+		<input type="submit" value="Upload file" class = 'button'/>
+			</form>
+			
+		</div>
+		
+		<img src = 'https://content.energage.com/company-images/SE100160/SE100160_logo_orig.png'
+					class = 'wayfair'>
+					
+		
 	</body>
 </html>
