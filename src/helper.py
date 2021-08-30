@@ -58,7 +58,7 @@ def search(query_path, num):
     query = fe.extract(img)
     # Calculate the similarity (distance) between images
     dists = np.linalg.norm(array_reloaded - query, axis=1)
-    # Extract 30 images that have lowest distance
+    # Extract N images that have lowest distance
     ids = np.argsort(dists)[:num]
     results = [image_paths[id][1] for id in ids]
     # Visualize the result
