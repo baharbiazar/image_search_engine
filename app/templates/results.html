@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Results</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
 	
 	</head>
 	<body >
@@ -12,10 +12,19 @@
 		here are the results
 		
 		<h3>Uploaded image:</h3>
-		<img  src= '1.png'>
-		<!-- {{ original_image }} -->
+		<img  src= {{ original_image }} >
+		
 		<hr>
 		<h3>Similar images to explore:</h3>
+		
+		{% for i in range(10) %}
+		<img  src= {{ search_results[i] }} >
+		<br>
+		{{'SKU:'}} {{ skus[i]}}
+		<br>
+		<a href= "https://www.wayfair.com/">click here</a>
+		<br><br><br>
+		{% endfor %}
 			
 	</body>
 </html>

@@ -1,10 +1,11 @@
+
 import os
 import sys
 import os.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))
 
 
-from src import helper
+from src.helper import FeatureExtractor , search
 
 from flask import Flask, render_template, request
 
@@ -20,7 +21,13 @@ import re
 print(os.listdir(path = "."))
 # exit()
 
-UPLOAD_FOLDER = './uploads'
+array_reloaded = np.load('../model/alloffeatnumpy.npy')
+    
+with open("static/image_paths.txt", "rb") as fp: # Unpickling
+    image_paths = pickle.load(fp)
+
+
+UPLOAD_FOLDER = './static/uploads'
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -34,16 +41,24 @@ def index():
 def image():
     if request.method == 'POST':
         f = request.files['file']
-        test_path_and_file = './uploads/' + ''.join(str(secure_filename(f.filename)).strip().split())
-        print(test_path_and_file)
+        test_path_and_file = './static/uploads/' + ''.join(str(secure_filename(f.filename)).strip().split())
+        print(os.path.abspath(test_path_and_file))
         f.save(test_path_and_file)
 
         # Code goes here to function to put file through model and find similar images
-        
+
+        query_path = test_path_and_file
+        search_results, skus = search(query_path, 20)
+        print(search_results)       
         return render_template('results.html',
-            original_image = '.'+ test_path_and_file)
+            original_image = test_path_and_file,
+            search_results = search_results,
+            skus = skus)
     else:
         return 'Not POST ... unsuccessful'
+
+
+
 
 
 
