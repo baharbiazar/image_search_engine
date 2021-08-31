@@ -60,7 +60,7 @@ def image():
             try:
                 urls.append(url_df[url_df.name == i]['link'].values[0])
             except:
-                urls.append(-1)
+                urls.append('https://www.wayfair.com/keyword.php?keyword='+ i)
         print(urls)
 
         return render_template('results.html',
