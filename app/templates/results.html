@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>PickAchair</title>
+		<title>pick.a.chair</title>
 		
 		<style>
 
@@ -24,7 +24,8 @@
 					}
 
 				
-				.center {
+				.center {	font-family: 'PT Sans', sans-serif;
+							text-align: center;
 							display: block;
 							margin-left: auto;
 							margin-right: auto;
@@ -38,18 +39,18 @@
 		<p>
 		<h2>Uploaded image:</h2>
 		<div class = 'center'>
-		<img  src= {{ original_image }} height="200px"></div>
+		<img  src= {{ original_image }} height="200px", class="center"></div>
 		
 		<hr>
-		<h2>Similar images to explore:</h2>
+		<h2>Similar items to explore:</h2>
 		<div class = 'center'>
 		{% for i in range(10) %}
-		<img  src= {{ search_results[i] }} >
-		<br>
+		<img  src= {{ search_results[i] }} , class="center">
+		
 		{{'SKU:'}} {{ skus[i]}}
-		<br>
+		
 		<a href = {{ urls[i]}}>Click Here</a>
-		<br><br><br>
+		<br><br>
 		{% endfor %}
 	    </div></p>
 	</body>
