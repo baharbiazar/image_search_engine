@@ -24,9 +24,8 @@ Implementation of this project involved:
 ## Tools and Technologies
 - Key python libraries:  
       a. Pandas (Metadata cleaning and manipulation)  
-      b. BeautifulSoup (Image and metadata scraping)  
-      c. Matplotlib (Visualizations)  
-      d. Keras (Autoencoder model)
+      b. BeautifulSoup, Selenuim (Image and metadata scraping)  
+      c. Tensorflow, Keras (Vgg16 model)
 
 - AWS EC2 (Data storage and App deployment)
 
