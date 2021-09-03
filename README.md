@@ -1,5 +1,4 @@
-# Image Search Engine: *Image Recommendation using Deep Learning*
-
+# Pick.a.chair: A ReverseImage Search Engine built with deep learning
 [Bahar Biazar](https://www.linkedin.com/in/bahar-biazar/)  
 September 2021
 
