@@ -34,6 +34,7 @@ Implementation of this project involved:
 - Flask (Web framework for app)
 
 ## Acknowledgments
+- Special thanks to amazing Galvanize people specially Noah and Ryan.
 
 
 
