@@ -29,7 +29,7 @@ Implementation of this project involved:
       c. Matplotlib (Visualizations)  
       d. Keras (Autoencoder model)
 
-- Google Cloud Platform (Data storage and model training)
+- AWS EC2 (Data storage and App deployment)
 
 - Flask (Web framework for app)
 
