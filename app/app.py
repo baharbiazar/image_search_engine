@@ -50,7 +50,7 @@ def image():
         # Code goes here to function to put file through model and find similar images
 
         query_path = test_path_and_file
-        search_results, skus = search(query_path, 20)
+        search_results, skus = search(query_path, 30)
         print(search_results)
         print(skus)
 
@@ -96,4 +96,4 @@ def result():
 if __name__ == '__main__':
     
         
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)
