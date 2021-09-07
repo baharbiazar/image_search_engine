@@ -25,7 +25,7 @@ Implementation of this project involved:
 <img src = 'images/query.png' width = '800'/>
 
 - Create an Amazon EC2 t2.large instance to host the docker container with a public IP which makes the app accessible to public.
-<img src = 'images/app.png' width = '800'/>
+<img src = 'images/app.png' width = '700'/>
 
 ## Key Tools and Technologies
 a. Pandas (Metadata cleaning and manipulation)  
