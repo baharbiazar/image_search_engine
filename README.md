@@ -11,7 +11,7 @@ App Link: http://50.18.139.230:5000
 
 ## Overview and Motivation
 - Prior to Galvanize, I worked in the interior design, architecture, and urban planning industry for a number of years, where I enjoyed creating spaces in the real world that people love. Although the outcome is pleasing, there are some aspects of the process that in my opinion are very time consuming and could be done faster and more efficient with more advanced tools. After learning about convolutional neural networks and computer vision algorithms, I decided to use my data science skills to make an app for inverse image search that could take a user-uploaded image of furniture and return visually similar items, along with relevant information about the pieces. This is not only useful for interior designers but anyone who is shopping online can benefit from it.
-[](http://www.nadjavilenne.com/wordpress/wp-content/uploads/2012/09/chaises_decoupees_opma.jpg)
+![](http://www.nadjavilenne.com/wordpress/wp-content/uploads/2012/09/chaises_decoupees_opma.jpg)
 ## Methodology 
 Implementation of this project involved: 
 
