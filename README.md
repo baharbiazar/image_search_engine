@@ -10,7 +10,7 @@ App Link: http://13.57.194.193:5000/
 * [Acknowledgments](#acknowledgments)
 
 ## Overview and Motivation
-- For this project, my motivation was to develop a recommendation tool that could take a user-uploaded image of furniture and return images of fine art, along with relevant information about the piece, that are most visually similar. 
+- My motivation for this project was to develop a recommendation tool that could take a user-uploaded image of furniture and return similar items, along with relevant information about the piece, that are most visually similar. 
 
 ## Methodology 
 Implementation of this project involved: 
