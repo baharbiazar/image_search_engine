@@ -24,11 +24,11 @@ Implementation of this project involved:
 <img src = 'https://miro.medium.com/max/1400/1*ZqkQYVB3_Gw0hjrAMzi6_A.png' width = '700'/>
 
 - Develop a Flask web application that allows user to upload an image of furniture from their computer and return the top 10 pieces of fine art that the model determines are the best matches. The app is put on a docker container to be deployed on AWS. You can see test results with a query image below:
-![](images/query.png)
+![](presentation/query.png)
 
 - Create an Amazon EC2 t2.large instance to host the docker container with a public IP which makes the app accessible to public.
 
-![](images/app.png)
+![](presentation/app.png)
 
 ## Key Tools and Technologies
 a. Pandas (Metadata cleaning and manipulation)  
