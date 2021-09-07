@@ -25,7 +25,7 @@ Implementation of this project involved:
 ## Key Tools and Technologies
 a. Pandas (Metadata cleaning and manipulation)  
 b. BeautifulSoup, Selenuim (Image and metadata scraping)  
-c. Tensorflow, Keras (Vgg16 model)
+c. Tensorflow, Keras (Vgg16 model)<br>
 d. Flask App, Docker, Amazon cloud compute system (Web app, data storage and deployment)
 
 ## Acknowledgments
