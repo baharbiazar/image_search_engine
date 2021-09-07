@@ -1,6 +1,7 @@
 # Pick.a.chair: A Reverse Image Search Engine built with deep learning
 [Bahar Biazar](https://www.linkedin.com/in/bahar-biazar/)  
 September 2021
+![](presentation/app.png)
 App Link: http://50.18.139.230:5000
 
 ## Table of Contents
@@ -28,8 +29,6 @@ Implementation of this project involved:
 ![](presentation/query.png)
 
 - Create an Amazon EC2 t2.large instance to host the docker container with a public IP which makes the app accessible to public.
-
-![](presentation/app.png)
 
 ## Key Tools and Technologies
 a. Pandas (Metadata cleaning and manipulation)  
