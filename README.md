@@ -19,13 +19,15 @@ Implementation of this project involved:
 - Building a corpus of 16,000+ images and metadata scraped from wayfair.com using Selenium and BeautifulSoup.
 - Implementing a content based image retrival system(CBIR) that converts image data into numerical values and compares similarity between database and query image and returns similar items, using TensorFlow/Keras.
 <img src = 'https://www.researchgate.net/profile/Mohammed-Elmogy/publication/273258916/figure/fig3/AS:669349706739729@1536596814668/A-typical-Content-Based-Image-Retrieval-system.png' width = '500'/>
+
 - Using VGG16, a pre-trained CNN model as a feature extractor to convert images into number arrays. I used transfer learning,kept the convolutional layers and used the FC1 layer as the outcome. All the images in the database are converted to matricies, predicted by this layer and the extracted features are saved as arrays of numbers. Then a similarity measure is used to calculate the distance between these images and the quary image which is also processed throught the same model. I used euclidean distance but cosine similarity also returns the same results.
 <img src = 'https://miro.medium.com/max/1400/1*ZqkQYVB3_Gw0hjrAMzi6_A.png' width = '700'/>
+
 - Develop a Flask web application that allows user to upload an image of furniture from their computer and return the top 10 pieces of fine art that the model determines are the best matches. The app is put on a docker container to be deployed on AWS. You can see test results with a query image below:
 <img src = '~/Desktop/presentation_pics/query.png' width = '800'/>
 
 - Create an Amazon EC2 t2.large instance to host the docker container with a public IP which makes the app accessible to public.
-![](../presentation_pics/app.png)
+![](../../presentation_pics/app.png)
 
 ## Key Tools and Technologies
 a. Pandas (Metadata cleaning and manipulation)  
