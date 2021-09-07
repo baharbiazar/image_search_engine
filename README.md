@@ -7,6 +7,7 @@ App Link: http://50.18.139.230:5000
 * [Overview and Motivation](#overview-and-motivation)
 * [Methodology](#methodology)
 * [Tools and Technologies](#tools-and-technologies)
+* [Future Steps](#future-steps)
 * [Acknowledgments](#acknowledgments)
 
 ## Overview and Motivation
@@ -36,8 +37,13 @@ b. BeautifulSoup, Selenuim (Image and metadata scraping)
 c. Tensorflow, Keras (Vgg16 model)<br>
 d. Flask App, Docker, Amazon cloud compute system (Web app, data storage and deployment)
 
+## Future Steps
+- Minitor usability based on number of items sold via the app
+- Incorporate augmented images with training set to have better results when users take a photo from a furniture with their own camera
+- Expand the database and add more vendors
+
 ## Acknowledgments
-- Special thanks to amazing Galvanize people specially Noah and Ryan.
+- The work for this project was done as my final capstone for Galvanize Data Science immersive Bootcamp and could not have been done without the support and guidance of Noah Shreve(@n-sweep) and my awesome instructors.
 
 
 
