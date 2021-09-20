@@ -1,6 +1,6 @@
 # Pick.a.chair: A Reverse Image Search Engine built with deep learning
 [Bahar Biazar](https://www.linkedin.com/in/bahar-biazar/) 
-<br>[Youtube Demo](https://www.youtube.com/watch?v=36BZ24OpFvk&t=5s)
+<br>[YouTube Demo](https://www.youtube.com/watch?v=36BZ24OpFvk&t=5s)
 
 September 2021
 ![](presentation/app.png)
