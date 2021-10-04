@@ -40,7 +40,7 @@ c. Tensorflow, Keras (Vgg16 model)<br>
 d. Flask App, Docker, Amazon cloud compute system (Web app, data storage and deployment)
 
 ## Future Steps
-- Minitor usability based on number of items sold via the app
+- Monitor usability based on number of items sold via the app
 - Incorporate augmented images with training set to have better results when users take a photo from a furniture with their own camera
 - Expand the database and add more vendors
 
