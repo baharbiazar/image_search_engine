@@ -1,4 +1,4 @@
-^X
+
 # Pick.a.chair: A Reverse Image Search Engine built with Convolutional Neural Networks
 [Bahar Biazar](https://www.linkedin.com/in/bahar-biazar/) 
 <br>[YouTube Demo](https://www.youtube.com/watch?v=36BZ24OpFvk&t=5s)
