@@ -47,6 +47,5 @@ d. Flask App, Docker, Amazon cloud compute system (Web app, data storage and dep
 
 ## Acknowledgments
 - The work for this project was done as my final capstone for Galvanize Data Science immersive Bootcamp and could not have been successfully deployed without the support and guidance of Noah Shreve(@n-sweep) and my awesome instructors.
-- Thanks!
 
 
